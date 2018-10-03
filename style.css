@@ -1,4 +1,36 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
+}
+
+svg {
+  width: 100vw;
+  /* overflow: hidden; */
+}
+/* ----- Menu ------ */
+nav {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100vw;
+}
+
+nav a {
+  padding: 30px;
+  background-color: black;
+  text-decoration: none;
+  color: #ffffff;
+  font: 2em sans-serif;
+  text-align: center;
+  width: 40%;
+  flex-grow: 1;
+}
+
+/* ------ Menu slut ------ */
+
+div {
+  width: 100vw;
+  height: 100px;
+  background-color: aqua;
 }
