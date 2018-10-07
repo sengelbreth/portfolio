@@ -1,36 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
 * {
   padding: 0;
   margin: 0;
 }
 
+body {
+  background-color: #1d1d1d;
+}
+
+/* ---- svg --- */
 svg {
   width: 100vw;
-  /* overflow: hidden; */
 }
+
+/* --- svg slut --- *7
+
 /* ----- Menu ------ */
 nav {
   display: flex;
   align-items: flex-start;
   flex-wrap: nowrap;
-  height: 100%;
+
   width: 100vw;
+  /* border-bottom: 3px solid #f341cc; */
+  box-shadow: 0px 3px #666566;
 }
 
 nav a {
   padding: 30px;
   background-color: black;
   text-decoration: none;
-  color: #ffffff;
-  font: 2em sans-serif;
+  color: #666566;
+  font-size: 2em;
+  font-family: "Varela Round", sans-serif;
   text-align: center;
   width: 40%;
-  flex-grow: 1;
+  /*  flex-grow: 1; */
+  text-decoration: none;
 }
+
+/* ---- sticky menu --- */
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+/* ---- sticky menu slut --- */
+
+/* --- menu hover --- */
+
+nav a:hover {
+  text-decoration: none;
+  box-shadow: 0px 7px #fff;
+  /*border-bottom: 7px solid #f341cc; */
+  color: #fff;
+}
+
+/* --- menu hover slut --- */
 
 /* ------ Menu slut ------ */
 
-div {
+.content {
   width: 100vw;
-  height: 100px;
-  background-color: aqua;
+  height: 500px;
+  /* background-color: aqua; */
+  border-block-end-style: solid;
+  border-color: black;
 }
