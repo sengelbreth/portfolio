@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
+@import url("https://fonts.googleapis.com/css?family=Niramit");
+
+/*font-family: 'Niramit', sans-serif;*/
 
 * {
   padding: 0;
@@ -29,7 +32,7 @@ nav {
 
 nav a {
   padding: 30px;
-  background-color: black;
+  background-color: #000;
   text-decoration: none;
   color: #666566;
   font-size: 2em;
@@ -62,10 +65,59 @@ nav a:hover {
 
 /* ------ Menu slut ------ */
 
-.content {
+#content {
   width: 100vw;
-  height: 500px;
-  /* background-color: aqua; */
-  border-block-end-style: solid;
-  border-color: black;
 }
+
+/* --- gallery --- */
+#portfolio {
+  margin: 2rem 0;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  -webkit-column-width: 33.33333333333333%;
+  -moz-column-width: 33.33333333333333%;
+  column-width: 33.33333333333333%;
+}
+
+.tile img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+/* --- gallery hover --- */
+.tile {
+  position: relative;
+}
+
+.overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tile:hover .image {
+  opacity: 0.3;
+}
+
+.tile:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* --- gallery hover slut --- */
+/* --- gallery slut --- */
