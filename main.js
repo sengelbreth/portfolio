@@ -31,3 +31,5 @@ function stickyNavigation() {
     nav.classList.remove("fixed-nav");
   }
 }
+
+// sticky menu slut //
