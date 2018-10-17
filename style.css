@@ -10,6 +10,7 @@
 
 body {
   background-color: #1d1d1d;
+  overflow-x: hidden;
 }
 
 /* ---- svg --- */
@@ -89,6 +90,13 @@ nav a:hover {
   height: auto;
   margin-bottom: 2rem;
 }
+.text a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Niramit", sans-serif;
+  text-decoration: none;
+}
+
 /* --- gallery hover --- */
 .tile {
   position: relative;
@@ -115,9 +123,19 @@ nav a:hover {
 
 .text {
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 1.2em;
+  font-family: "Niramit", sans-serif;
 }
 
 /* --- gallery hover slut --- */
 /* --- gallery slut --- */
+
+/* --- footer --- */
+
+footer {
+  width: 100vw;
+  height: 500px;
+  overflow: hidden;
+}
+
+/* --- footer slut ---  */
