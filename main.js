@@ -2,8 +2,6 @@
 // svg animation //
 import TweenMax from "gsap/TweenMax";
 
-console.log("wtf?");
-
 TweenMax.staggerFrom(
   " #firkanter_1_ path",
   1,
@@ -25,8 +23,6 @@ window.addEventListener("scroll", stickyNavigation);
 function stickyNavigation() {
   if (window.scrollY >= navTop) {
     nav.classList.add("fixed-nav");
-
-    console.log("sticky!!");
   } else {
     nav.classList.remove("fixed-nav");
   }
