@@ -1,16 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 @import url("https://fonts.googleapis.com/css?family=Niramit");
 
-/*font-family: 'Niramit', sans-serif;*/
-
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: #222222;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* ---- svg --- */
@@ -21,7 +21,7 @@ svg {
 /* --- svg slut --- *7
 
 /* ----- Menu ------ */
-nav {
+#navigation {
   display: flex;
   align-items: flex-start;
   flex-wrap: nowrap;
@@ -31,7 +31,7 @@ nav {
   box-shadow: 0px 3px #666566;
 }
 
-nav a {
+#navigation a {
   padding: 30px;
   background-color: #000;
   text-decoration: none;
@@ -55,7 +55,7 @@ nav a {
 
 /* --- menu hover --- */
 
-nav a:hover {
+#navigation a:hover {
   text-decoration: none;
   box-shadow: 0px 7px #fff;
   /*border-bottom: 7px solid #f341cc; */
@@ -139,18 +139,117 @@ footer {
 }
 
 .footeroverlay {
-  background-color: #222222;
+  background-color: #666566;
   width: 90vw;
 
   height: 500px;
-  opacity: 0.9;
+  opacity: 1;
+}
+#contentfooter {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-.footeroverlay img {
-  width: 7vw;
+#contentfooter .grid-item img {
+  width: 5vw;
 }
 
-.footeroverlay ul {
+.grid-item ul {
   list-style-type: none;
+  padding: 1vw;
+}
+
+.grid-item ul li {
+  padding: 0.5vw;
+}
+
+.grid-item ul li a {
+  text-decoration: none;
+  color: #000;
 }
 /* --- footer slut ---  */
+
+/* --- about --- */
+
+#contentAbout {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 5em;
+  color: #fff;
+}
+
+.grid-item {
+  font-size: 30px;
+}
+
+.abouttext {
+  padding-top: 40vh;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+#cv {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#circle {
+  width: 27vw;
+  height: 27vw;
+  border: solid 5px #000;
+  border-radius: 50%;
+}
+
+#sidenav a {
+  text-decoration: none;
+  color: #666566;
+  font-size: 1em;
+  font-family: "Varela Round", sans-serif;
+}
+
+#sidenav {
+  list-style-type: none;
+  margin-left: 10vw;
+}
+
+#sidenav a:hover {
+  color: #fff;
+}
+
+.skill {
+  width: 15vw;
+}
+
+.icon {
+  width: 22vw;
+}
+
+/*--- contact from ---*/
+
+form {
+  color: #fff;
+  flex-grow: 100vw;
+  font-family: "Niramit", sans-serif;
+  font-size: 1.5em;
+}
+
+form input {
+  width: 25vw;
+  height: 3vh;
+  font-size: 1em;
+}
+
+form textarea {
+  width: 25vw;
+  font-size: 1em;
+}
+
+#contactcontent {
+  display: flex;
+  margin-left: 30vw;
+  margin-right: 37.5vw;
+  padding: 5vw;
+}
+
+/*--- contact from  slut ---*/
